@@ -1,6 +1,6 @@
 const PORT = 8080;
-const ENVIROMENT = "LOCAL";
-//const ENVIROMENT = "HEROKU";
+//const ENVIROMENT = "LOCAL";
+const ENVIROMENT = "HEROKU";
 
 
 let BASEURL = '';
