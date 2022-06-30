@@ -1,7 +1,7 @@
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 
-const loginUrl = `http://localhost:${PORT}/api/registro`;
+const loginUrl = `${BASEURL}/registro`;
 
 function registerUser() {
     const data = {
