@@ -7,6 +7,7 @@ const nodeVersion = document.getElementById('nodeVersion');
 const carpetaProy = document.getElementById('carpetaProy');
 const memoryUse = document.getElementById('memoryUse');
 const numCpus = document.getElementById('numCpus');
+const port = document.getElementById('port');
 
 function formatObject(object) {
     let stringObject = '<ul>';
@@ -31,6 +32,7 @@ function getInfo() {
         .then(response => response.json())
         .then(data => {
             console.log("data:", data);
+            port.innerHTML += data.port;
             argEntradaSueltos.innerHTML += formatArray(data.argEntrada._);
             delete data.argEntrada._;
             argEntrada.innerHTML += formatObject(data.argEntrada);

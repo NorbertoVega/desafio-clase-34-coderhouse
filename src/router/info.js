@@ -12,6 +12,7 @@ router.get('/info', (req, res) => {
     try {
         logger.info(`Ruta: ${req.protocol}://${req.get('host')}${req.url}, Method: ${req.method}`);
         const info = {
+            port: config.PORT,
             argEntrada: args,
             pathEjec: process.argv[0],
             os: process.platform,
